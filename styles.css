@@ -1,0 +1,136 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    margin: 20px;
+}
+
+/* Encabezados */
+h2, h3 {
+    color: #333;
+    text-align: center;
+}
+
+/* Grupos de entrada */
+.input-group {
+    margin-bottom: 15px;
+}
+
+/* Etiquetas y entradas */
+label {
+    display: block;
+    color: #555;
+}
+
+input[type="text"], input[type="password"], select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botones */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+.logout-button {
+    text-align: right;
+}
+/* Botón para volver a inicio de sesión */
+.back-button button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-button button:hover {
+    background-color: #0056b3;
+}
+
+.back-button button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+/* Estilo general para los botones */
+button {
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Para que se comporten como elementos en línea */
+    font-size: 16px; /* Tamaño de fuente */
+    margin: 5px 2px; /* Margen alrededor del botón */
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, transform 0.3s; /* Transición suave */
+}
+
+/* Estilo para botones al pasar el mouse */
+button:hover {
+    background-color: #45a049; /* Color de fondo al pasar el mouse */
+    transform: translateY(-2px); /* Efecto de levantamiento */
+}
+
+/* Estilo específico para botones de eliminar */
+button[onclick*="eliminarVehiculo"] {
+    background-color: #f44336; /* Color rojo para eliminar */
+}
+
+button[onclick*="eliminarVehiculo"]:hover {
+    background-color: #d32f2f; /* Color rojo más oscuro al pasar el mouse */
+}

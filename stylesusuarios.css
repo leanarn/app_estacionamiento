@@ -1,0 +1,96 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4CAF50; /* Color verde */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Estilos del botón */
+button {
+    background-color: #f44336; /* Color rojo */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+button:hover {
+    background-color: #d32f2f; /* Color rojo más oscuro al pasar el mouse */
+}
+
+/* Estilos de la tabla */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+
+th {
+    background-color: #4CAF50; /* Color verde */
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Color gris claro al pasar el mouse */
+}
+
+/* Estilo para el contenedor principal */
+main {
+    padding: 20px;
+}
+
+/* Estilos del botón de eliminar */
+.eliminar {
+    background-color: #ff9800; /* Color naranja para eliminar */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.eliminar:hover {
+    background-color: #e68900; /* Color naranja más oscuro al pasar el mouse */
+}
+/* Agregar estilos para el botón de volver */
+.header-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espacio entre botones */
+}
+
+#volver-admin {
+    background-color: #2196F3; /* Color azul para volver */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+#volver-admin:hover {
+    background-color: #1976D2; /* Color azul más oscuro al pasar el mouse */
+}

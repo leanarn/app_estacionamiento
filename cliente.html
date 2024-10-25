@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente - Estacionamiento Medido</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="bienvenida">Bienvenido, Cliente</h1>
+
+        <!-- Botón para cerrar sesión -->
+        <div class="logout-button">
+            <button onclick="cerrarSesion()">Cerrar Sesión</button>
+        </div>
+
+        <!-- Mostrar tarifa de estacionamiento -->
+        <div id="tarifa-estacionamiento">
+            <h2>Tarifa de Estacionamiento</h2>
+            <p>Motos: $2 por hora</p>
+            <p>Autos: $3 por hora</p>
+        </div>
+
+        <div class="section">
+            <h2>Registro de Vehículo</h2>
+            <form id="vehiculo-form">
+                <div class="input-group">
+                    <label for="propietario">Propietario:</label>
+                    <input type="text" id="propietario" placeholder="Ingresa tu nombre" required>
+                </div>
+                <div class="input-group">
+                    <label for="matricula">Matrícula:</label>
+                    <input type="text" id="matricula" placeholder="Ingresa la matrícula" required>
+                </div>
+                <div class="input-group">
+                    <label for="tipo-vehiculo">Tipo de Vehículo:</label>
+                    <select id="tipo-vehiculo" required>
+                        <option value="auto">Auto</option>
+                        <option value="moto">Moto</option>
+                    </select>
+                </div>
+                <button type="button" onclick="ingresarVehiculo()">Ingresar Vehículo</button>
+            </form>
+        </div>
+
+        <div class="section">
+            <h2>Retirar Vehículo</h2>
+            <form id="retirar-vehiculo-form">
+                <div class="input-group">
+                    <label for="matricula-retirar">Matrícula del Vehículo:</label>
+                    <input type="text" id="matricula-retirar" placeholder="Ingresa la matrícula" required>
+                </div>
+                <button type="submit">Retirar Vehículo</button>
+            </form>
+        </div>
+        
+    </div>
+
+    <script src="cliente.js"></script>
+</body>
+</html>
